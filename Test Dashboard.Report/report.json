@@ -1,0 +1,331 @@
+{
+  "config": "{\"version\":\"5.37\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY18SU07\",\"version\":\"3.21\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useStylableVisualContainerHeader\":true,\"exportDataMode\":1,\"useNewFilterPaneExperience\":true},\"objects\":{\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "pods": [
+    {
+      "boundSection": "ReportSection",
+      "config": "{\"acceptsFilterContext\":1}",
+      "name": "Pod"
+    },
+    {
+      "boundSection": "ReportSection909301d4b5aa9a7e0da2",
+      "config": "{\"acceptsFilterContext\":1}",
+      "name": "Pod1"
+    },
+    {
+      "boundSection": "ReportSectionba3767bbdcdd296df656",
+      "config": "{\"acceptsFilterContext\":1}",
+      "name": "Pod2"
+    },
+    {
+      "boundSection": "ReportSectiond5d9f72230cabd343a02",
+      "config": "{}",
+      "name": "Pod3"
+    }
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "anywhere_logo9622613099987398.jpg",
+            "path": "anywhere_logo9622613099987398.jpg",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY18SU07",
+            "path": "BaseThemes/CY18SU07.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "forecastTools93EB212B02C44467B120F2563F68A7F6.pbiviz.json",
+            "path": "forecastTools93EB212B02C44467B120F2563F68A7F6.pbiviz.json",
+            "type": 5
+          }
+        ],
+        "name": "forecastTools93EB212B02C44467B120F2563F68A7F6",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "narrativeAF44D3780B9743AB80246B39523323A3.pbiviz.json",
+            "path": "narrativeAF44D3780B9743AB80246B39523323A3.pbiviz.json",
+            "type": 5
+          }
+        ],
+        "name": "narrativeAF44D3780B9743AB80246B39523323A3",
+        "type": 0
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"filterCard\":[{\"properties\":{\"backgroundColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0.6}}}}},\"borderColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"id\":\"Available\"}}],\"outspacePane\":[{\"properties\":{\"backgroundColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0.4}}}}}}}]}}",
+      "displayName": "Table",
+      "displayOption": 1,
+      "filters": "[{\"name\":\"Filter\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"OPTable\"}},\"Property\":\"Appointment AM PM\"}},\"type\":\"Categorical\",\"howCreated\":1},{\"name\":\"Filter1\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"OPTable\"}},\"Property\":\"Appointment Type\"}},\"type\":\"Categorical\",\"howCreated\":1},{\"name\":\"Filter2\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"OPTable\"}},\"Property\":\"Appointment Status\"}},\"type\":\"Categorical\",\"howCreated\":1},{\"name\":\"Filter3\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"OPTable\"}},\"Property\":\"Speciality\"}},\"type\":\"Categorical\",\"howCreated\":1},{\"name\":\"Filter4\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"OPTable\"}},\"Property\":\"Clinic Code\"}},\"type\":\"Categorical\",\"howCreated\":1},{\"name\":\"Filter5\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"OPTable\"}},\"Property\":\"Clinic ID\"}},\"type\":\"Categorical\",\"howCreated\":1},{\"name\":\"Filter6\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"OPTable\"}},\"Property\":\"Clinician\"}},\"type\":\"Categorical\",\"howCreated\":1},{\"name\":\"Filter7\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"AppointmentDate\"}},\"Property\":\"Appointment Day of Week\"}},\"type\":\"Categorical\",\"howCreated\":1}]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"612654777eabc31725d8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":16,\"y\":112,\"z\":4000,\"width\":1248,\"height\":272}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Calendar.Month\",\"active\":true}],\"Columns\":[{\"queryRef\":\"Calendar.Day Of month\",\"active\":true}],\"Values\":[{\"queryRef\":\"CountNonNull(OPTable.Appointment ID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"OPTable\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Calendar\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Appointment ID\"}},\"Function\":5},\"Name\":\"CountNonNull(OPTable.Appointment ID)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Day Of month\"},\"Name\":\"Calendar.Day Of month\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Month\"},\"Name\":\"Calendar.Month\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"values\":[{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"OPTable\"}},\"Property\":\"Appointment ID\"}},\"Function\":5}},\"FillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'minColor'\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'maxColor'\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'noColor'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"CountNonNull(OPTable.Appointment ID)\"}}]}}}",
+          "filters": "[]",
+          "height": 272.00,
+          "width": 1248.00,
+          "x": 16.00,
+          "y": 112.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"8b1c5ea2e3de8e1c7a85\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1056,\"y\":0,\"z\":3000,\"width\":208,\"height\":80}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"OPTable.New to Review Ratio\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"OPTable\",\"Type\":0},{\"Name\":\"_\",\"Entity\":\"__Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"New to Review Ratio\"},\"Name\":\"OPTable.New to Review Ratio\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Appointment ID\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'New to review ratio'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0}}}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"'15'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.00,
+          "width": 208.00,
+          "x": 1056.00,
+          "y": 0.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"8b91b55ba81e13fa6134\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":160,\"height\":80}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"anywhere_logo9622613099987398.jpg\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.00,
+          "width": 160.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"cfc0f53351529b5cf03d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":16,\"y\":394,\"width\":1248,\"height\":272,\"z\":5000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Calendar.Month\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(OPTable.Appointment ID)\"}],\"Series\":[{\"queryRef\":\"OPTable.Appointment Type\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"OPTable\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Calendar\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Appointment ID\"}},\"Function\":5},\"Name\":\"CountNonNull(OPTable.Appointment ID)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Appointment Type\"},\"Name\":\"OPTable.Appointment Type\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Month\"},\"Name\":\"Calendar.Month\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 272.00,
+          "width": 1248.00,
+          "x": 16.00,
+          "y": 394.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"f4858db62e14ccba89b4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":624,\"y\":0,\"z\":1000,\"width\":208,\"height\":80}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CountNonNull(OPTable.Appointment ID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"OPTable\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Appointment ID\"}},\"Function\":5},\"Name\":\"CountNonNull(OPTable.Appointment ID)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Appointment ID\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Appointments'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0}}}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"'15'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.00,
+          "width": 208.00,
+          "x": 624.00,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"fc7f26c39a9b585a82fe\",\"layouts\":[{\"id\":0,\"position\":{\"x\":848,\"y\":0,\"z\":2000,\"width\":192.00000000000003,\"height\":80}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(OPTable.Patient ID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"OPTable\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Patient ID\"}},\"Function\":2},\"Name\":\"Min(OPTable.Patient ID)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Patient ID\"}},\"Function\":2}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Patients'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0}}}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"'15'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.00,
+          "width": 192.00,
+          "x": 848.00,
+          "y": 0.00,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"objects\":{\"filterCard\":[{\"properties\":{\"backgroundColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0.6}}}}},\"borderColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"id\":\"Available\"}}],\"outspacePane\":[{\"properties\":{\"backgroundColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0.4}}}}}}}]}}",
+      "displayName": "Postcode",
+      "displayOption": 1,
+      "filters": "[{\"name\":\"Filter\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"OPTable\"}},\"Property\":\"Appointment AM PM\"}},\"type\":\"Categorical\",\"howCreated\":1},{\"name\":\"Filter1\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"OPTable\"}},\"Property\":\"Appointment Type\"}},\"type\":\"Categorical\",\"howCreated\":1},{\"name\":\"Filter2\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"OPTable\"}},\"Property\":\"Appointment Status\"}},\"type\":\"Categorical\",\"howCreated\":1},{\"name\":\"Filter3\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"OPTable\"}},\"Property\":\"Speciality\"}},\"type\":\"Categorical\",\"howCreated\":1},{\"name\":\"Filter4\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"OPTable\"}},\"Property\":\"Clinic Code\"}},\"type\":\"Categorical\",\"howCreated\":1},{\"name\":\"Filter5\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"OPTable\"}},\"Property\":\"Clinic ID\"}},\"type\":\"Categorical\",\"howCreated\":1},{\"name\":\"Filter6\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"OPTable\"}},\"Property\":\"Clinician\"}},\"type\":\"Categorical\",\"howCreated\":1},{\"name\":\"Filter7\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"AppointmentDate\"}},\"Property\":\"Appointment Day of Week\"}},\"type\":\"Categorical\",\"howCreated\":1}]",
+      "height": 720.00,
+      "name": "ReportSection909301d4b5aa9a7e0da2",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1fa4ecef8123e37b40fe\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":80,\"z\":5000,\"width\":720,\"height\":272}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Calendar.Date\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(OPTable.Appointment ID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"OPTable\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Calendar\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Appointment ID\"}},\"Function\":5},\"Name\":\"CountNonNull(OPTable.Appointment ID)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Date\"},\"Name\":\"Calendar.Date\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Date\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"trend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"displayName\":{\"expr\":{\"Literal\":{\"Value\":\"'Trend Line 1'\"}}}}}],\"forecast\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transform\":{\"algorithm\":\"Forecast\",\"parameters\":[{\"Literal\":{\"Value\":\"7D\"},\"Name\":\"Unit\"},{\"Literal\":{\"Value\":\"20D\"},\"Name\":\"ForecastLength\"},{\"Literal\":{\"Value\":\"0D\"},\"Name\":\"IgnoreLast\"},{\"Literal\":{\"Value\":\"0.95D\"},\"Name\":\"ConfidenceLevel\"}]},\"displayName\":{\"expr\":{\"Literal\":{\"Value\":\"'Forecast 1'\"}}}},\"selector\":{\"metadata\":\"CountNonNull(OPTable.Appointment ID)\",\"id\":\"1\"}}]}}}",
+          "filters": "[]",
+          "height": 272.00,
+          "width": 720.00,
+          "x": 0.00,
+          "y": 80.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"3ee85dbbd6e7a41ce53f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":352,\"width\":720,\"height\":240,\"z\":6000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Columns\":[{\"queryRef\":\"Calendar.Month\",\"active\":true}],\"Rows\":[{\"queryRef\":\"Postcodes.Postcode\",\"active\":true}],\"Values\":[{\"queryRef\":\"CountNonNull(OPTable.Appointment ID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Postcodes\",\"Type\":0},{\"Name\":\"o\",\"Entity\":\"OPTable\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Calendar\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Postcode\"},\"Name\":\"Postcodes.Postcode\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Appointment ID\"}},\"Function\":5},\"Name\":\"CountNonNull(OPTable.Appointment ID)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Month\"},\"Name\":\"Calendar.Month\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Appointment ID\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"values\":[{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"OPTable\"}},\"Property\":\"Appointment ID\"}},\"Function\":5}},\"FillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#99e3dd'\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#FD625E'\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"CountNonNull(OPTable.Appointment ID)\"}}]}}}",
+          "filters": "[]",
+          "height": 240.00,
+          "width": 720.00,
+          "x": 0.00,
+          "y": 352.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"8b1c5ea2e3de8e1c7a85\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1056,\"y\":0,\"z\":3000,\"width\":208,\"height\":80}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"OPTable.New to Review Ratio\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"OPTable\",\"Type\":0},{\"Name\":\"_\",\"Entity\":\"__Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"New to Review Ratio\"},\"Name\":\"OPTable.New to Review Ratio\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Appointment ID\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'New to review ratio'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0}}}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"'15'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.00,
+          "width": 208.00,
+          "x": 1056.00,
+          "y": 0.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"8b91b55ba81e13fa6134\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":160,\"height\":80}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"anywhere_logo9622613099987398.jpg\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.00,
+          "width": 160.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"b50ab50f2062d9e75f33\",\"layouts\":[{\"id\":0,\"position\":{\"x\":736,\"y\":80,\"z\":4000,\"width\":544,\"height\":512}}],\"singleVisual\":{\"visualType\":\"filledMap\",\"projections\":{\"Category\":[{\"queryRef\":\"Postcodes.Postcode\",\"active\":true}],\"Series\":[{\"queryRef\":\"Postcodes.Postcode\"}],\"Tooltips\":[{\"queryRef\":\"Min(OPTable.Patient ID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Postcodes\",\"Type\":0},{\"Name\":\"o\",\"Entity\":\"OPTable\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Postcode\"},\"Name\":\"Postcodes.Postcode\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Patient ID\"}},\"Function\":3},\"Name\":\"Min(OPTable.Patient ID)\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"mapControls\":[{\"properties\":{\"autoZoom\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dataPoint\":[{\"properties\":{\"fillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'minColor'\"}}}},\"max\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'maxColor'\"}}}},\"nullColoringStrategy\":{\"strategy\":{\"expr\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 512.00,
+          "width": 544.00,
+          "x": 736.00,
+          "y": 80.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"f4858db62e14ccba89b4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":624,\"y\":0,\"z\":1000,\"width\":208,\"height\":80}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CountNonNull(OPTable.Appointment ID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"OPTable\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Appointment ID\"}},\"Function\":5},\"Name\":\"CountNonNull(OPTable.Appointment ID)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Appointment ID\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Appointments'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0}}}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"'15'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.00,
+          "width": 208.00,
+          "x": 624.00,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"fc7f26c39a9b585a82fe\",\"layouts\":[{\"id\":0,\"position\":{\"x\":848,\"y\":0,\"z\":2000,\"width\":192.00000000000003,\"height\":80}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(OPTable.Patient ID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"OPTable\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Patient ID\"}},\"Function\":2},\"Name\":\"Min(OPTable.Patient ID)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Patient ID\"}},\"Function\":2}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Patients'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0}}}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"'15'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.00,
+          "width": 192.00,
+          "x": 848.00,
+          "y": 0.00,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"objects\":{\"filterCard\":[{\"properties\":{\"backgroundColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0.6}}}}},\"borderColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"id\":\"Available\"}}],\"outspacePane\":[{\"properties\":{\"backgroundColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0.4}}}}}}}]}}",
+      "displayName": "DNA",
+      "displayOption": 1,
+      "filters": "[{\"name\":\"Filter\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"OPTable\"}},\"Property\":\"Appointment AM PM\"}},\"type\":\"Categorical\",\"howCreated\":1},{\"name\":\"Filter1\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"OPTable\"}},\"Property\":\"Appointment Type\"}},\"type\":\"Categorical\",\"howCreated\":1},{\"name\":\"Filter2\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"OPTable\"}},\"Property\":\"Appointment Status\"}},\"type\":\"Categorical\",\"howCreated\":1},{\"name\":\"Filter3\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"OPTable\"}},\"Property\":\"Speciality\"}},\"type\":\"Categorical\",\"howCreated\":1},{\"name\":\"Filter4\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"OPTable\"}},\"Property\":\"Clinic Code\"}},\"type\":\"Categorical\",\"howCreated\":1},{\"name\":\"Filter5\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"OPTable\"}},\"Property\":\"Clinic ID\"}},\"type\":\"Categorical\",\"howCreated\":1},{\"name\":\"Filter6\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"OPTable\"}},\"Property\":\"Clinician\"}},\"type\":\"Categorical\",\"howCreated\":1},{\"name\":\"Filter7\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"AppointmentDate\"}},\"Property\":\"Appointment Day of Week\"}},\"type\":\"Categorical\",\"howCreated\":1}]",
+      "height": 720.00,
+      "name": "ReportSectionba3767bbdcdd296df656",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1453ce71b618f512739b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":128,\"z\":5000,\"width\":592,\"height\":416}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Patients1.Age\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(OPTable.Appointment ID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Patients1\",\"Type\":0},{\"Name\":\"o\",\"Entity\":\"OPTable\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Age\"},\"Name\":\"Patients1.Age\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Appointment ID\"}},\"Function\":5},\"Name\":\"CountNonNull(OPTable.Appointment ID)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Appointment ID\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 416.00,
+          "width": 592.00,
+          "x": 0.00,
+          "y": 128.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"8b1c5ea2e3de8e1c7a85\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1056,\"y\":0,\"z\":3000,\"width\":208,\"height\":80}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"OPTable.New to Review Ratio\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"OPTable\",\"Type\":0},{\"Name\":\"_\",\"Entity\":\"__Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"New to Review Ratio\"},\"Name\":\"OPTable.New to Review Ratio\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Appointment ID\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'New to review ratio'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0}}}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"'15'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.00,
+          "width": 208.00,
+          "x": 1056.00,
+          "y": 0.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"8b91b55ba81e13fa6134\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":160,\"height\":80}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"anywhere_logo9622613099987398.jpg\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.00,
+          "width": 160.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"aee39450819bb1fd2c70\",\"layouts\":[{\"id\":0,\"position\":{\"x\":608,\"y\":128,\"z\":4000,\"width\":656,\"height\":448}}],\"singleVisual\":{\"visualType\":\"scatterChart\",\"projections\":{\"X\":[{\"queryRef\":\"CountNonNull(OPTable.Appointment ID)\",\"active\":true}],\"Y\":[{\"queryRef\":\"OPTable.DNA %\"}],\"Series\":[{\"queryRef\":\"Patients1.Age (bins)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"OPTable\",\"Type\":0},{\"Name\":\"p\",\"Entity\":\"Patients1\",\"Type\":0},{\"Name\":\"_\",\"Entity\":\"__Measures\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Appointment ID\"}},\"Function\":5},\"Name\":\"CountNonNull(OPTable.Appointment ID)\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"DNA %\"},\"Name\":\"OPTable.DNA %\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Age (bins)\"},\"Name\":\"Patients1.Age (bins)\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 448.00,
+          "width": 656.00,
+          "x": 608.00,
+          "y": 128.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"f4858db62e14ccba89b4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":624,\"y\":0,\"z\":1000,\"width\":208,\"height\":80}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CountNonNull(OPTable.Appointment ID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"OPTable\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Appointment ID\"}},\"Function\":5},\"Name\":\"CountNonNull(OPTable.Appointment ID)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Appointment ID\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Appointments'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0}}}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"'15'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.00,
+          "width": 208.00,
+          "x": 624.00,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"fc7f26c39a9b585a82fe\",\"layouts\":[{\"id\":0,\"position\":{\"x\":848,\"y\":0,\"z\":2000,\"width\":192.00000000000003,\"height\":80}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(OPTable.Patient ID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"OPTable\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Patient ID\"}},\"Function\":2},\"Name\":\"Min(OPTable.Patient ID)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Patient ID\"}},\"Function\":2}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Patients'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0}}}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"'15'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.00,
+          "width": 192.00,
+          "x": 848.00,
+          "y": 0.00,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Narrative",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSectiond5d9f72230cabd343a02",
+      "ordinal": 3,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"245a8b8305a46474a934\",\"layouts\":[{\"id\":0,\"position\":{\"x\":32,\"y\":0,\"z\":1000,\"width\":992,\"height\":288}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Calendar.Date\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(OPTable.Appointment ID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"OPTable\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Calendar\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Appointment ID\"}},\"Function\":5},\"Name\":\"CountNonNull(OPTable.Appointment ID)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Date\"},\"Name\":\"Calendar.Date\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Date\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{}}}",
+          "filters": "[]",
+          "height": 288.00,
+          "width": 992.00,
+          "x": 32.00,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"43c14c9165ed7cdced0a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1040,\"y\":0,\"width\":240,\"height\":288,\"z\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Calendar.Day\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendar\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Day\"},\"Name\":\"Calendar.Day\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 288.00,
+          "width": 240.00,
+          "x": 1040.00,
+          "y": 0.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"aad8a190856ac64a142d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":16,\"y\":432,\"z\":0,\"width\":1264,\"height\":272}}],\"singleVisual\":{\"visualType\":\"narrativeAF44D3780B9743AB80246B39523323A3\",\"projections\":{\"Dimensions\":[{\"queryRef\":\"Calendar.Date\"}],\"Values\":[{\"queryRef\":\"CountNonNull(OPTable.Appointment ID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"OPTable\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Calendar\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Appointment ID\"}},\"Function\":5},\"Name\":\"CountNonNull(OPTable.Appointment ID)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Date\"},\"Name\":\"Calendar.Date\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Date\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"hidden\":[{\"properties\":{\"settings\":{\"expr\":{\"Literal\":{\"Value\":\"'{\\\"activePageId\\\":\\\"display\\\",\\\"valueType\\\":\\\"continuous\\\",\\\"display\\\":{\\\"fontSize\\\":14,\\\"structure\\\":\\\"bullets\\\",\\\"verbosity\\\":\\\"low\\\",\\\"formatting\\\":{\\\"good\\\":{\\\"color\\\":\\\"#417505\\\",\\\"bold\\\":true,\\\"italic\\\":false,\\\"underline\\\":false},\\\"bad\\\":{\\\"color\\\":\\\"#D0021B\\\",\\\"bold\\\":true,\\\"italic\\\":false,\\\"underline\\\":false}}},\\\"language\\\":{\\\"dimensions\\\":{\\\"Calendar.Date\\\":{\\\"id\\\":\\\"Calendar.Date\\\",\\\"label\\\":\\\"Date\\\",\\\"open\\\":false,\\\"index\\\":0,\\\"variationIds\\\":[\\\"rfo6\\\"],\\\"variations\\\":{\\\"rfo6\\\":{\\\"singular\\\":\\\"period\\\",\\\"singularTyped\\\":\\\"period\\\",\\\"plural\\\":\\\"periods\\\",\\\"pluralTyped\\\":\\\"periods\\\",\\\"id\\\":\\\"rfo6\\\"}}}},\\\"numDrilldowns\\\":3},\\\"characterizations\\\":{\\\"measures\\\":{\\\"CountNonNull(OPTable.Appointment ID)\\\":{\\\"id\\\":\\\"CountNonNull(OPTable.Appointment ID)\\\",\\\"label\\\":\\\"Appointment ID\\\",\\\"open\\\":true,\\\"index\\\":0,\\\"format\\\":\\\"number\\\",\\\"upSentiment\\\":\\\"good\\\",\\\"addValues\\\":false}}},\\\"analytics\\\":{\\\"groups\\\":{\\\"segments\\\":{\\\"id\\\":\\\"segments\\\",\\\"index\\\":0,\\\"enabled\\\":true,\\\"configurable\\\":true,\\\"thresholds\\\":{\\\"open\\\":false,\\\"inclusion\\\":{\\\"value\\\":0},\\\"formatting\\\":{\\\"enabled\\\":true,\\\"value\\\":0}},\\\"label\\\":\\\"Segments\\\",\\\"requiresMulti\\\":\\\"none\\\"},\\\"trendline\\\":{\\\"id\\\":\\\"trendline\\\",\\\"index\\\":1,\\\"enabled\\\":true,\\\"configurable\\\":true,\\\"thresholds\\\":{\\\"open\\\":true,\\\"inclusion\\\":{\\\"value\\\":0.95},\\\"formatting\\\":{\\\"enabled\\\":true,\\\"value\\\":0.6},\\\"predictionPeriods\\\":4},\\\"label\\\":\\\"Trendline\\\",\\\"requiresMulti\\\":\\\"none\\\"},\\\"volatility\\\":{\\\"id\\\":\\\"volatility\\\",\\\"index\\\":2,\\\"enabled\\\":true,\\\"configurable\\\":false,\\\"label\\\":\\\"Volatility\\\",\\\"requiresMulti\\\":\\\"none\\\"}}},\\\"reverseRows\\\":false,\\\"relationships\\\":{\\\"activeRelationshipType\\\":\\\"none\\\",\\\"components\\\":{},\\\"periods\\\":1,\\\"timeUnit\\\":\\\"period\\\"},\\\"valueTypeChosen\\\":true,\\\"storeVersion\\\":\\\"1.2\\\"}'\"}}}}}],\"Narrative\":[{\"properties\":{\"Type\":{\"expr\":{\"Literal\":{\"Value\":\"'continuous'\"}}},\"Font Size\":{\"expr\":{\"Literal\":{\"Value\":\"'14'\"}}},\"Structure\":{\"expr\":{\"Literal\":{\"Value\":\"'bullets'\"}}},\"Verbosity\":{\"expr\":{\"Literal\":{\"Value\":\"'low'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 272.00,
+          "width": 1264.00,
+          "x": 16.00,
+          "y": 432.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

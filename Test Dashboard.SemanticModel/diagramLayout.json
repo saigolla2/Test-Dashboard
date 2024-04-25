@@ -1,0 +1,82 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 683.3,
+            "y": 640
+          },
+          "nodeIndex": "OPTable",
+          "size": {
+            "height": 341,
+            "width": 238
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 405.3,
+            "y": 470.5
+          },
+          "nodeIndex": "Patients1",
+          "size": {
+            "height": 198,
+            "width": 238
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 101.5,
+            "y": 269.7
+          },
+          "nodeIndex": "Postcodes",
+          "size": {
+            "height": 255,
+            "width": 238
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 961.3,
+            "y": 470
+          },
+          "nodeIndex": "Calendar",
+          "size": {
+            "height": 198,
+            "width": 238
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1085.2,
+            "y": 0
+          },
+          "nodeIndex": "__Measures",
+          "size": {
+            "height": 118,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}
