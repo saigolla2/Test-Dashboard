@@ -1692,6 +1692,12 @@
             "expression": "TODAY()",
             "formatString": "General Date",
             "lineageTag": "62703d76-1517-4c16-8785-95d6b206b715"
+          },
+          {
+            "name": "Count of Patients",
+            "expression": "COUNT(Patients1[Patient ID])",
+            "formatString": "0",
+            "lineageTag": "64124696-7456-42bb-a75c-a7c6c72b7d7b"
           }
         ],
         "partitions": [
